@@ -29,11 +29,11 @@
    ```
 2. **构建**:
    ```bash
-   go build -o picture-rpa main.go
+   go build -o picture-rpa-go main.go
    ```
 3. **启动程序**:
    ```bash
-   ./picture-rpa
+   ./picture-rpa-go
    ```
 
 ### 许可协议
@@ -67,11 +67,11 @@ A lightweight RPA tool based on image recognition (Go version).
 
 2. **Build**:
    ```bash
-   go build -o picture-rpa main.go
+   go build -o picture-rpa-go main.go
    ```
 3. **Run**:
    ```bash
-   ./picture-rpa
+   ./picture-rpa-go
    ```
    
 ### License
