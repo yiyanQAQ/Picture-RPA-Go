@@ -23,11 +23,15 @@
 - `snips/`: 截图保存目录
 
 ### 运行
-1. **构建**:
+1. **克隆**:
+   ```bash
+   git clone https://github.com/yiyanQAQ/Picture-RPA-Go.git
+   ```
+2. **构建**:
    ```bash
    go build -o picture-rpa main.go
    ```
-2. **启动程序**:
+3. **启动程序**:
    ```bash
    ./picture-rpa
    ```
@@ -56,14 +60,19 @@ A lightweight RPA tool based on image recognition (Go version).
 - `snips/`: Screenshot directory
 
 ### Run
-1. **Build**:
+1. **Clone**:
+   ```bash
+   git clone https://github.com/yiyanQAQ/Picture-RPA-Go.git
+   ```
+
+2. **Build**:
    ```bash
    go build -o picture-rpa main.go
    ```
-2. **Run**:
+3. **Run**:
    ```bash
    ./picture-rpa
    ```
-
+   
 ### License
 This project is licensed under the [GPLv3](LICENSE) License.
