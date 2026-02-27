@@ -7,17 +7,18 @@ import (
 	"strings"
 	"time"
 
+	"picture-rpa/constants"
+
 	"github.com/atotto/clipboard"
 	"github.com/go-vgo/robotgo"
-	"picture-rpa/constants"
 )
 
 type ExecutionContext struct {
-	IsRunning  *bool
-	LogFunc    func(string, string)
-	Conf       float64
-	LoopCount  int
-	Commands   []constants.Command
+	IsRunning *bool
+	LogFunc   func(string, string)
+	Conf      float64
+	LoopCount int
+	Commands  []constants.Command
 }
 
 func toInterfaces(ss []string) []interface{} {
@@ -37,7 +38,7 @@ func (ctx *ExecutionContext) ExecuteWorkflow() {
 		ctx.LogFunc(fmt.Sprintf("Step %d: %s", i+1, constants.REV_CMD_TYPES[cmd.Type]), "info")
 
 		switch cmd.Type {
-		case 1.0, 2.0, 3.0: // Click, Double Click, Right Click (with image)
+		case 1.0, 2.0, 3.0: // Click, Double Click, Right Click
 			clicks := 1
 			button := "left"
 			if cmd.Type == 2.0 {

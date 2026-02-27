@@ -116,7 +116,6 @@ func (g *PictureRPAGUI) buildUI() {
 		container.NewHBox(snipBtn, browseBtn, layout.NewSpacer(), addBtn),
 	)
 
-	// Mid Frame (Table)
 	g.Table = widget.NewTable(
 		func() (int, int) {
 			return len(g.Commands), 4
@@ -147,11 +146,6 @@ func (g *PictureRPAGUI) buildUI() {
 	g.Table.SetColumnWidth(2, 400)
 	g.Table.SetColumnWidth(3, 100)
 
-	// 设置表头文字（Fyne Table 没有直接的 Header 属性，通常用第一行模拟或在外部放置 Label）
-	// 这里通过 buildUI 的逻辑确保用户理解，但在 Fyne 中 Table Heading 比较特殊。
-	// 为了简单起见，我们暂不修改 Table 内部渲染逻辑，但确保其他文字一致。
-
-	// Bottom Frame (Logs and Controls)
 	g.Logs = widget.NewList(
 		func() int {
 			return len(g.LogData)
