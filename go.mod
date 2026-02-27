@@ -1,4 +1,4 @@
-module picture-rpa-go
+module picture-rpa
 
 go 1.25.0
 
