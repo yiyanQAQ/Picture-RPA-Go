@@ -1,7 +1,7 @@
 package main
 
 import (
-	"picture-rpa/gui"
+	"picture-rpa-go/gui"
 )
 
 func main() {
